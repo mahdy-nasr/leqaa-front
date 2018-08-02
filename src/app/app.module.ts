@@ -1,7 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { Http, Headers, RequestOptions, Response } from  '@angular/http';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
@@ -13,13 +12,13 @@ import { QrscanPage } from '../pages/qrscan/qrscan';
 import { GuestPage } from '../pages/guest/guest';
 import { LoginPage} from '../pages/login/login'
 
-
+import { HTTP } from '@ionic-native/http';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Geolocation } from '@ionic-native/geolocation';
 import { LaunchNavigator } from '@ionic-native/launch-navigator';
-import { HTTP } from '@ionic-native/http';
+
 
 
 @NgModule({
@@ -53,11 +52,10 @@ import { HTTP } from '@ionic-native/http';
   providers: [
     StatusBar,
     SplashScreen,
-    HTTP,
     Geolocation,
     LaunchNavigator,
     BarcodeScanner,
-
+    HTTP,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

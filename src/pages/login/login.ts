@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Http, Headers, RequestOptions, Response } from  '@angular/http';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HTTP } from '@ionic-native/http';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the LoginPage page.
@@ -19,8 +19,9 @@ export class LoginPage {
 
   
   
-  mobile: any;
-  password: any;
+  mobile: any = "112233";
+  password: any = "mahdy";
+  user:any;
 
   
   constructor(public navCtrl: NavController, public navParams: NavParams, private http: HTTP) {
@@ -29,14 +30,12 @@ export class LoginPage {
 
   doLogin(){
 
-    console.log(this.mobile)
-
-    this.http.post('http://142.93.88.110/loginuser', {'mobile':'112233', 'password':'mahdy'}, {'Content-Type': 'application/json'})
+    this.http.post('http://142.93.88.110/loginuser', {mobile:this.mobile, password:this.password}, {})
       .then(data => {
 
-        console.log(data.status);
-        console.log(data.data); // data received by server
-        console.log(data.headers);
+        this.user = JSON.parse(data.data);
+        this.navCtrl.push(HomePage,{user:this.user});
+  
 
       })
       .catch(error => {

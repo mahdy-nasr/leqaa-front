@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { MyconveyPage } from '../myconvey/myconvey';
 import { QrscanPage } from '../qrscan/qrscan';
 import { GuestPage } from '../guest/guest';
@@ -13,14 +13,15 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  user:any;
+  constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner: BarcodeScanner) {
 
-  constructor(public navCtrl: NavController, private barcodeScanner: BarcodeScanner) {
-
+    this.user =  this.navParams.get('user');
   }
 
   navToConveyPage()
   {
-  	this.navCtrl.push(MyconveyPage, {});
+  	this.navCtrl.push(MyconveyPage, {user:this.user});
   }
 
   navToQrScanPage()

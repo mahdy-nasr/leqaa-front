@@ -19,16 +19,19 @@ declare var google;
 export class MyconveyPage {
 	@ViewChild('map') mapElement: ElementRef;
 	map: any;
-	start:any = '21.620260,39.159560';
+	start:any ;
 	end:any = '21.502051,39.179858';
 	directionsService = new google.maps.DirectionsService;
 	directionsDisplay = new google.maps.DirectionsRenderer;
+	user:any;
   constructor(
   	public navCtrl: NavController,
   	public navParams: NavParams, 
   	private launchNavigator: LaunchNavigator,
   	private geolocation: Geolocation
   	) {
+  	this.user =  this.navParams.get('user');
+  	this.start = this.user.location;
   }
 
   ionViewDidLoad() {
@@ -42,7 +45,7 @@ export class MyconveyPage {
     this.map = new google.maps.Map(this.mapElement.nativeElement, {
       zoom: 7,
 
-      center: {lat: 21.620260, lng: 39.159560}
+      center: this.start
     });
     this.addMarker(this.map);
     this.directionsDisplay.setMap(this.map);
