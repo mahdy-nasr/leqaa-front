@@ -9,12 +9,14 @@ import { HomePage } from '../pages/home/home';
 import { BasePage } from '../pages/base/base';
 import { MyconveyPage } from '../pages/myconvey/myconvey';
 import { QrscanPage } from '../pages/qrscan/qrscan';
+import { GuestPage } from '../pages/guest/guest';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Geolocation } from '@ionic-native/geolocation';
+import { LaunchNavigator } from '@ionic-native/launch-navigator';
 import { HTTP } from '@ionic-native/http';
 
 
@@ -25,6 +27,7 @@ import { HTTP } from '@ionic-native/http';
     ContactPage,
     HomePage,
     BasePage,
+    GuestPage,
     QrscanPage,
     MyconveyPage
   ],
@@ -39,6 +42,7 @@ import { HTTP } from '@ionic-native/http';
     ContactPage,
     HomePage,
     BasePage,
+    GuestPage,
     QrscanPage,
     MyconveyPage
   ],
@@ -47,6 +51,7 @@ import { HTTP } from '@ionic-native/http';
     SplashScreen,
     HTTP,
     Geolocation,
+    LaunchNavigator,
     BarcodeScanner,
 
     {provide: ErrorHandler, useClass: IonicErrorHandler}
