@@ -1,6 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { Http, Headers, RequestOptions, Response } from  '@angular/http';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
@@ -10,6 +11,7 @@ import { BasePage } from '../pages/base/base';
 import { MyconveyPage } from '../pages/myconvey/myconvey';
 import { QrscanPage } from '../pages/qrscan/qrscan';
 import { GuestPage } from '../pages/guest/guest';
+import { LoginPage} from '../pages/login/login'
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -29,7 +31,8 @@ import { HTTP } from '@ionic-native/http';
     BasePage,
     GuestPage,
     QrscanPage,
-    MyconveyPage
+    MyconveyPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { HTTP } from '@ionic-native/http';
     BasePage,
     GuestPage,
     QrscanPage,
-    MyconveyPage
+    MyconveyPage,
+    LoginPage
   ],
   providers: [
     StatusBar,

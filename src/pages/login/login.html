@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title >Login Screen</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <form (submit)="doLogin()">
+    <ion-list>
+
+      <!-- <ion-item>
+        <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
+        <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
+      </ion-item> -->
+
+      
+      <!-- Want to use a Username instead of an Email? Here you go: -->
+
+      <ion-item>
+        <ion-label floating>{{ 'Mobile'}}</ion-label>
+        <ion-input type="text" [(ngModel)]="mobile" name="mobile"></ion-input>
+        <!-- <ion-input type="text"  name="username"></ion-input> -->
+      </ion-item>
+     
+
+      <ion-item>
+        <ion-label fixed>{{ 'PASSWORD' }}</ion-label>
+        <!-- <ion-input type="password"  name="password"></ion-input> -->
+        <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+
+      </ion-item>
+
+      <div padding>
+        <button ion-button color="primary" block>{{ 'LOGIN_BUTTON'}}</button>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>

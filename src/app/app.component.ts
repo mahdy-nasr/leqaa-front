@@ -7,12 +7,14 @@ import { BasePage } from '../pages/base/base';
 import { HomePage } from '../pages/home/home';
 import { MyconveyPage } from '../pages/myconvey/myconvey';
 import { QrscanPage } from '../pages/qrscan/qrscan';
+import { LoginPage } from '../pages/login/login'
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = LoginPage;
+  
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
