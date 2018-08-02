@@ -6,12 +6,18 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+<ion-content  padding>
+  <div>
+      <ion-input style="background: #eee;" type="text" [(ngModel)]="encodeText"></ion-input>,
+      <button ion-button color="dark" block  (click)="encodeQr()">Start Encoding</button>
+  </div>
+  <div>
+    <button ion-button color="dark" block  (click)="scanQr()">Start Scaning</button>
+    <div *ngIf="scannedData.text">
+        <label>Lost Hajji Reported </label>
+        <br>
+        <span>Hajji Number #{{ scannedData.text }}</span>
+    </div>
+  </div>
+  
 </ion-content>
