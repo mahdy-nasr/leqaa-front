@@ -6,12 +6,16 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
+import { BasePage } from '../pages/base/base';
+import { MyconveyPage } from '../pages/myconvey/myconvey';
+import { QrscanPage } from '../pages/qrscan/qrscan';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Geolocation } from '@ionic-native/geolocation';
+import { HTTP } from '@ionic-native/http';
 
 
 @NgModule({
@@ -20,7 +24,9 @@ import { Geolocation } from '@ionic-native/geolocation';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    BasePage,
+    QrscanPage,
+    MyconveyPage
   ],
   imports: [
     BrowserModule,
@@ -32,11 +38,14 @@ import { Geolocation } from '@ionic-native/geolocation';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    BasePage,
+    QrscanPage,
+    MyconveyPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    HTTP,
     Geolocation,
     BarcodeScanner,
 

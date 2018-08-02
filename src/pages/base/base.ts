@@ -5,9 +5,9 @@ import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
 
 @Component({
-  templateUrl: 'tabs.html'
+  templateUrl: 'base.html'
 })
-export class TabsPage {
+export class BasePage {
 
   tab1Root = HomePage;
   tab2Root = AboutPage;

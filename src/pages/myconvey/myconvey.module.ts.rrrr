@@ -1,0 +1,13 @@
+import { NgModule } from '@angular/core';
+import { IonicPageModule } from 'ionic-angular';
+import { MyconveyPage } from './myconvey';
+
+@NgModule({
+  declarations: [
+    MyconveyPage,
+  ],
+  imports: [
+    IonicPageModule.forChild(MyconveyPage),
+  ],
+})
+export class MyconveyPageModule {}
