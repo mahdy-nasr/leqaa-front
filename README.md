@@ -26,8 +26,7 @@ The project is to build a portal with both front and back end to provide communi
 -   In the frequent event of a haji losing track of his or her own convoy, they will be able to go to the next point in schedule through GPS navigation. Moreover, in case haji is not carrying a smartphone, he or she can simply walk up to any other haji with a smartphone, get their QR code scanned. Once scanned, the following will happen automatically:
     
   * Information about the lost haji will be sent to the relevant supervisor, with details on his or her location. Arrangements can then be started to help the lost haji.
-  * Smartphone will immediately identify the nearest volunteer and communicate with them to help the lost haji.
-  * Any haji can activate a volunteer mode, and help other elderly or sick ones within vicinity. Such an option would reduce government financial burden and make people safer by reuniting lost people with their groups.
+  * Any haji can volunteer and help other elderly or sick ones whenever he or she comes across them. Such an option would reduce government financial burden and make people safer by reuniting lost people with their groups.
     
 
   
