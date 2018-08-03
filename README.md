@@ -1,6 +1,15 @@
 # Project Description: Leqaa
 
-  
+_Terminology:_
+
+_- Convoy: Mission (in Arabic, Hamla) in which pilgrims are grouped and supervised_
+
+_- Haji: An individual who performs pilgrimage_
+
+_- Supervisor: A mentor assigned by the convoy to lead hajis during the performance of pilgimage_
+
+
+## Introduction
 
 During Hajj Hackathon, more than 3000 participants, organizers and service partners represented a micro and overly simplified Hajj simulation, for young and energetic people. Moving in buses between limited number of locations still created an overwhelming engagement for some people. Imaging, the real Hajj season with 1000 times more people moving between various locations, requiring logistics, healthcare and other services. The prospective magnitude of Hajj is ever increasing on yearly basis. To manage all that, the right technological solutions could come in real handy. Hence Leqaa as the first solution of its kind for Hajj convoys and individual hajis.
 
@@ -14,15 +23,10 @@ The project is to build a portal with both front and back end to provide communi
     
 -   Hajis will be constantly updated on the next movement/event date and time, as well as receive announcement from supervisors.
     
--   In the frequent event of a haji losing track of his or her own convoy, they will be able to go to the next point in schedule through GPS navigation. However, in case haji is not carrying a smartphone, he or she can simply walk up to any other haji with a smartphone, get their QR code scanned. Once scanned, the following will happen automatically:
+-   In the frequent event of a haji losing track of his or her own convoy, they will be able to go to the next point in schedule through GPS navigation. Moreover, in case haji is not carrying a smartphone, he or she can simply walk up to any other haji with a smartphone, get their QR code scanned. Once scanned, the following will happen automatically:
     
-
--   Notification will be sent about the lost haji to the relevant supervisor, with information on his or her location, the language of the owner of the smartphone. Chat channel can be opened immediately.
-    
--   Smartphone will immediately identify the nearest volunteer and communicate with them to help the lost haji. System would automatically give preference to the volunteer that speaks the lost haji’s language.
-    
-
--   Any haji can activate a volunteer mode, and help other elderly or sick ones within vicinity. Such an option would reduce government financial burden and make people safer by reuniting lost people with their groups.
+  * Information about the lost haji will be sent to the relevant supervisor, with details on his or her location. Arrangements can then be started to help the lost haji.
+  * Any haji can volunteer and help other elderly or sick ones whenever he or she comes across them. Such an option would reduce government financial burden and make people safer by reuniting lost people with their groups.
     
 
   
