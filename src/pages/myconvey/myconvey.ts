@@ -4,6 +4,9 @@ import { LaunchNavigator, LaunchNavigatorOptions } from '@ionic-native/launch-na
 import { Geolocation } from '@ionic-native/geolocation';
 
 
+import { HomePage } from '../home/home';
+
+
 /**
  * Generated class for the MyconveyPage page.
  *
@@ -17,6 +20,7 @@ declare var google;
   templateUrl: 'myconvey.html',
 })
 export class MyconveyPage {
+
 	@ViewChild('map') mapElement: ElementRef;
 	map: any;
 	start:any ;
@@ -30,8 +34,13 @@ export class MyconveyPage {
   	private launchNavigator: LaunchNavigator,
   	private geolocation: Geolocation
   	) {
+
   	this.user =  this.navParams.get('user');
   	this.start = this.user.location;
+  }
+  toHomePage()
+  {
+    this.navCtrl.push(HomePage, this.navParams.data);
   }
 
   ionViewDidLoad() {

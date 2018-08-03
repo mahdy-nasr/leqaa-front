@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Convey Info
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+<ion-list >
+<ion-item>
+  <ion-label Stacked>Name</ion-label>
+  <ion-label Stacked> {{ convey.name }} </ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label Stacked>Language</ion-label>
+  <ion-label Stacked>{{ convey.language }}</ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label Stacked>Country</ion-label>
+  <ion-label Stacked>{{ convey.country }}</ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label  Stacked>Capacity</ion-label>
+  <ion-label Stacked>{{ convey.capicity }}</ion-label>
+</ion-item>
+
+<ion-item  *ngIf="admin">
+  <ion-label  Stacked>Admin Mobile</ion-label>
+ <ion-label Stacked>{{ admin.mobile }}</ion-label>
+</ion-item>
+
+
+
+<ion-item>
+  <ion-label  Stacked>Location</ion-label>
+  <ion-label Stacked>{{ convey.location }}</ion-label>
+</ion-item>
+</ion-list>
+</ion-content>
+
+
+
+

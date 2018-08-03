@@ -11,6 +11,9 @@ import { MyconveyPage } from '../pages/myconvey/myconvey';
 import { QrscanPage } from '../pages/qrscan/qrscan';
 import { GuestPage } from '../pages/guest/guest';
 import { LoginPage} from '../pages/login/login'
+import { GuestconveyPage } from '../pages/guestconvey/guestconvey'
+import { BroadcastPage } from '../pages/broadcast/broadcast'
+import { ShowEventPage } from '../pages/show-event/show-event'
 
 import { HTTP } from '@ionic-native/http';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -30,6 +33,9 @@ import { LaunchNavigator } from '@ionic-native/launch-navigator';
     BasePage,
     GuestPage,
     QrscanPage,
+    GuestconveyPage,
+    BroadcastPage,
+    ShowEventPage,
     MyconveyPage,
     LoginPage
   ],
@@ -46,6 +52,9 @@ import { LaunchNavigator } from '@ionic-native/launch-navigator';
     BasePage,
     GuestPage,
     QrscanPage,
+    GuestconveyPage,
+    BroadcastPage,
+    ShowEventPage,
     MyconveyPage,
     LoginPage
   ],

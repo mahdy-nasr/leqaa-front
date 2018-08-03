@@ -1,0 +1,32 @@
+<!--
+  Generated template for the BroadcastPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>broadcast</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content style="overflow-y: hidden;" padding>
+    
+
+    <ion-scroll scrollY="true" style="width: 100%; height: 100%;">
+      <ion-card *ngFor ="let data of dataa">
+        
+        <ion-card-content style="width:90%;">
+          {{data.message}}
+        </ion-card-content>
+      </ion-card>
+          
+      
+    </ion-scroll>
+
+
+</ion-content>
+
+

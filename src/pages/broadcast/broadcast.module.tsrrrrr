@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { GuestPage } from './guest';
+import { BroadcastPage } from './broadcast';
 
 @NgModule({
   declarations: [
-    GuestPage,
+    BroadcastPage,
   ],
   imports: [
-    IonicPageModule.forChild(GuestPage),
+    IonicPageModule.forChild(BroadcastPage),
   ],
 })
-export class GuestPageModule {}
+export class BroadcastPageModule {}

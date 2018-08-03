@@ -19,8 +19,8 @@ export class LoginPage {
 
   
   
-  mobile: any = "112233";
-  password: any = "mahdy";
+  mobile: any = "12345";
+  password: any = "12345";
   user:any;
 
   

@@ -5,14 +5,16 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-  	<button ion-button menuToggle="menu1" start>
-      <ion-icon name="md-menu"></ion-icon>
-    </button>
-    <ion-title>My Convey</ion-title>
+  <ion-buttons start>
+      <button (click)="toHomePage()" style="margin-left: 5px;" ion-button icon-only>
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      My Convey
+    </ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -20,5 +22,8 @@
        
         <div #map id="map"></div>
         <button style="margin:0;height:10%;" ion-button block (click)="navigateToRoute()">Navigate To Location</button>
+    
    
 </ion-content>
+
+
