@@ -1,8 +1,11 @@
 # Project Description: Leqaa
 
 _Terminology:_
+
 _- Convoy: Mission (in Arabic, Hamla) in which pilgrims are grouped and supervised_
+
 _- Haji: An individual who performs pilgrimage_
+
 _- Supervisor: A mentor assigned by the convoy to lead hajis during the performance of pilgimage_
 
 
