@@ -9,6 +9,8 @@ _- Haji: An individual who performs pilgrimage_
 _- Supervisor: A mentor assigned by the convoy to lead hajis during the performance of pilgimage_
 
 
+## Introduction
+
 During Hajj Hackathon, more than 3000 participants, organizers and service partners represented a micro and overly simplified Hajj simulation, for young and energetic people. Moving in buses between limited number of locations still created an overwhelming engagement for some people. Imaging, the real Hajj season with 1000 times more people moving between various locations, requiring logistics, healthcare and other services. The prospective magnitude of Hajj is ever increasing on yearly basis. To manage all that, the right technological solutions could come in real handy. Hence Leqaa as the first solution of its kind for Hajj convoys and individual hajis.
 
 The project is to build a portal with both front and back end to provide communication and location services to help Hajj convoy supervisors collaborate with individual hajis to avoid missing any convoy member when moving from one location to the other. Also, it helps individual hajis find their own way back in case they are lost during Hajj season. The app helps get hajis reunited with their own convoys, even if they do not have smartphones. Saudi government will be able to know locations of convoy supervisors and hajis at all times, to help keep hajis safe and united with their own convoys.
